@@ -1,0 +1,200 @@
+/*Projeto realizado com bastante teoria mas pouco tempo de prática*/
+
+/*Configuração da página*/
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: sans-serif;
+}
+
+
+main {
+
+    text-align: center;
+}
+
+.titulo {
+    font-family: 'Rampart One', cursive;
+}
+
+#meu-nome {
+    font-family: 'Rampart One', cursive;
+}
+
+/*configuração da barra horizontal */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    ;
+}
+
+
+/*configuração do box-shadow pronta para fins de estilização(https://getcssscan.com/css-box-shadow-examples)*/
+
+nav a:hover {
+    padding: 25px;
+    transition: all 0.5s;
+    box-shadow: rgba(15, 3, 119, 0.4) -5px 5px, rgba(47, 44, 185, 0.3) -10px 10px, rgba(14, 7, 104, 0.2) -15px 15px, rgba(137, 159, 231, 0.1) -20px 20px, rgba(88, 46, 240, 0.203) -15px 15px;
+}
+
+/*configuração da header*/
+header {
+    height: 40vh;
+    background: no-repeat url(https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.;
+}
+
+header img {
+    margin-top: 15px;
+    width: 150px;
+    border-radius: 50%
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 50px;
+    color: red bold
+}
+
+header p {
+    font-size: 20px;
+    color: #fff;
+}
+
+/*Configuração do main*/
+
+.titulo {
+    color: rgba(15, 3, 119, 0.4);
+    font-size: 4em;
+    margin: 40px;
+    text-align: center;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+/*configuração do formulário*/
+
+section {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+    padding: 10px;
+    width: 500px;
+    border: 2px solid;
+    border-radius: 45px;
+
+}
+
+section h1 {
+    color: black;
+    font-size: 2em;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    align-items: center;
+}
+
+form label {
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    ;
+}
+
+form input {
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+form textarea {
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+form button {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 90%;
+    margin: 15px;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    box-shadow: rgba(15, 3, 119, 0.4) -5px 5px, rgba(47, 44, 185, 0.3) -10px 10px, rgba(14, 7, 104, 0.2) -15px 15px, rgba(137, 159, 231, 0.1) -20px 20px, rgba(88, 46, 240, 0.203) -25px 25px;
+}
+
+form a:hover {
+    background: rgba(47, 44, 185, 0.3);
+    transition: all 0.5s;
+}
+
+/*Configuração do rodapé*/
+footer p {
+    text-align: center;
+    margin: 5px;
+}
+
+
+#pagina-2 {
+    background-color: rgba(8, 8, 123, 0.933);
+}
+
+.mensagem {
+    font-family: 'Rampart One', cursive;
+    text-align: center;
+    font-size: 80px;
+    padding: 100px;
+}
+
+.instrução {
+    font-family: 'Rampart One', cursive;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+#botão {
+    display: flex;
+    padding: 6px;
+    border: white solid;
+    ;
+    width: 10%;
+    background-color: white;
+    font-family: 'Rampart One', cursive;
+}
