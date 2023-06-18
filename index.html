@@ -1,64 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praticando</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto individual - Módulo 1</title>
+    <meta name="author" content="Maycon Douglas" />
+    <meta name="description"
+        content="Este é o primeiro projeto do curso de desenvolvimento WEB, aplicado pelo SENAC com metodologia da Resilia Educação pelo programa Programadores Cariocas." />
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+<!--
+    A página deve conter 3 seções linkadas no topo
+resumo/quem é você?
+hobbies e interesses
+formulario de contato
+-->
 
 <body>
-
-    <nav>
-        <ul>
-            <li><a href="#about">Sobre mim</a></li>
-            <li><a href="#redirect">Contato</a></li>
-        </ul>
-    </nav>
+    <!-- Menu de navegação entre as seções -->
     <header>
-        <div class="center">
-            <img src="img/foto.png"
-                alt="Foto de perfil">
-        </div>
-        <div class="center">
-            <h1 id="meu-nome">Maycon Douglas</h1>
-        </div>
-        <p class="center">Estudante - Desenvolvimento Web</p>
-
+        <nav>
+            <div id="logo">Maycon Douglas</div>
+            <div>
+                <ul>
+                    <li><a href="#resumo">Resumo</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-
+    <!-- Conteúdo principal -->
     <main>
-        <h2 class="titulo">Sobre mim</h2>
-        <article class="container">
-            <p id="about">Meu nome é Maycon Douglas. Nasci em 6 de novembro de 1993. Estou com 28 anos e me sinto muito jovem, apesar dos boletos. Atualmente, vivo junto da minha mãe Elizabeth, minha sobrinha Yasmin, dois doguinhos e uma tortuguita. Trabalho em uma loja de brinquedos como estoquista e apesar de não ser uma profissão valorizada socialmente comparada a outras, desempenho as minhas tarefas com muito comprometimento e empenho. Não possuo formação acadêmica, pois nunca me empenhei o suficiente e além de problemas pessoais, nunca fui capaz de escolher uma coisa só para estudar e acabei não escolhendo nenhuma. Iniciei uma faculdade de Ciencias da Natureza onde o curso é muito amplo e não me especializaria em nada. Após essa experiência comecei a estudar por conta própria diariamente para me preparar para o ano que vem, porém surgiu a oportunidade do programa da Prefeitura Programadores Cariocas, e hoje estou empenhado em me formar no curso e buscar aperfeiçoamento futuramente seguindo este norte que o curso irá proporcionar</p>
-        </article>
-        <h2 class="titulo">Interesses</h2>
-        <article class="container">
-            <p>Me considero uma pessoa eclética e aberta para novas experiências. Por este motivo tenho dificuldade para me definir. Gosto de todo tipo de assunto e me aprofundo nos que mais me despertam a atenção. Sou bastante curioso e gosto de saber como as coisas funcionam. Com a cida adulta sinto estar perdendo um pouco disso, mas sempre que posso aprendo algo novo, nem sempre algo que erá útil e terá impacto direto em minha vida.   </p>
-        </article>
-        <h2 class="titulo">Hobbies</h2>
-        <article class="container">
-            <p>Quando tenho tempo, gosto de jogar videogames e assistir séries, filmes e documentários.Adoro filmes de ficção científica mas não tenho um favorito. Assisto mais de uma vez o mesmo filme como se fosse a primeira vez. Gosto muito das séries e filmes da Marvel. Na TV o principal canal que assisto é o History Channel, além da National Geographic, mas não sou nenhum gênio. Passo pouco tempo em redes sociais, então quando estou na internet geralmente é para buscar alguma informação e não tanto socializar. Futebol é meu esporte favorito, mas não tenho tido tempo para praticar. Quanto a assitir, apenas se for um jogo que me interesse ou não tenha nada melhor para fazer. Mas quando se trata de seleção brasileira, aí eu sou fanatico.</p>
-        </article>
+        <!-- Section para o resumo -->
+        <section id="resumo">
+            <div class="content">
+                <img src="assets/images/foto-perfil.jpg" alt="" class="image" />
+            </div>
+            <div class="content">
+                <h2>Resumo</h2>
+                <p>
+                    Meu nome é Maycon Douglas, tenho 21 anos e sou estudante de
+                    desenvolvimento WEB.
+                </p>
+                <p>
+                    Coclui recentemente o curso de Desenvolvimento Web, aplicado pelo
+                    SENAC com metodologia da Resilia Educação pelo programa
+                    Programadores Cariocas.
+                </p>
+                <p>
+                    No momento mantenho os estudos em desenvolvimento WEB, com foco em
+                    HTML, CSS e JavaScript.
+                </p>
+            </div>
+        </section>
+        <!-- Section para os hobbies -->
+        <section id="hobbies">
 
-        <section>
-            <h2 id>Formulário de contato</h2>
-            <form id="redirect" action="/html/agradecimento.html">
-                <label>Nome</label>
-                <input type="text" placeholder="Digite o seu nome" required="">
-                <label>E-mail</label>
-                <input type="email" placeholder="Digite o seu email" required="">
-                <label>Feedback</label>
-                <textarea cols="40" rows="10" placeholder="Deixe aqui a sua mensagem" required=""></textarea>
-                <button type="submit" value="">Enviar</button>
+            <div class="content">
+                    <h2>Hobbies</h2>
+                <p>Meus hobbies são:</p>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>Assistir filmes e séries</li>
+                    <li>Jogar videogame</li>
+                    <li>Estudar</li>
+                    <li>Programar</li>
+                </ul>
+
+            </div>
+        </section>
+        
+        <!-- Section para o formulário -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="assets/html/agradecimento.html">
+                <div class="itens-form">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome" />
+                </div>
+                <div class="itens-form">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" />
+                </div>
+                <div class="itens-form">
+                    <label for="message">Mensagem:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Digite sua mensagem"></textarea>
+                </div>
+                <div class="itens-form">
+                    <input type="submit" value="Enviar" />
+                </div>
             </form>
         </section>
     </main>
+    <!-- Rodapé com contatos -->
     <footer>
-        <p>&copy Produzido na última hora por Maycon &copy</p>
+        <p id="logo">Desenvolvido por Maycon Douglas</p>
+        <ul>
+            <li><a href="">Linkedin</a></li>
+            <li><a href="">Github</a></li>
+        </ul>
     </footer>
 </body>
 
