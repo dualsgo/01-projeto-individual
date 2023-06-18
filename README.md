@@ -1,11 +1,3 @@
-# Projeto individual do módulo 1 - Programadores Cariocas Resila/Senac
+# PROJETO INDIVIDUAL - Módulo 1 "Quem não é visto não é lembrado"
 
-Este é o meu primeiro projeto realizado após as primeiras aulas no Programadores Cariocas!
-
-## 🛠️ Construído com
-
-HTML e CSS
-
-## 📌 Versão
-
-Está é a versão original. Após adquirir mais experiência farei melhoras para efeito de comparação
+BOOTCAMP PROGRAMADORES CARIOCAS - Resilia Educação, SENAC RJ e Prefeitura do Rio de Janeiro
