@@ -1,4 +1,84 @@
-/* 
-Plano de fundo: #E5E7E9
-Fontes: #1C2833
- */
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Fontes */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:wght@100;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+
+/* Navegação */
+header nav {
+  background-color: #000;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+/* Lista de menu */
+.menu ul,
+.social ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li,
+.social li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.menu li a,
+.social li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu li a:hover,
+.logo a:hover,
+.social li a:hover {
+  color: #fff;
+}
+
+.social li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.social li a:hover {
+  color: #ccc;
+}
+
+/* Logo */
+.logo {
+  text-align: center;
+  height: 100%;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Caveat", cursive;
+}
+/* Animações Hover */
+.menu li a,
+.logo a,
+.social li a {
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover,
+.logo a:hover,
+.social li a:hover {
+  color: #2ecc71;
+}
