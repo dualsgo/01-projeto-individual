@@ -108,7 +108,7 @@ header nav {
 /* Estilos gerais */
 .container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: auto;
   padding: 20px;
 }
 
@@ -144,15 +144,57 @@ button:hover {
 }
 
 /* Estilos para a seção home */
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  line-height: 1.5;
+  height: 100vh; /* Define a altura da seção como 100% da altura da janela */
+}
 .imagemperfil img {
   max-width: 200px;
   border-radius: 50%;
 }
-
-.apresentação {
-  margin-left: 20px;
+/* Estilo para o título */
+.apresentação h1 {
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
 }
 
+/* Estilo para o parágrafo */
+.apresentação p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Estilo para os botões */
+#home button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilo para o botão de currículo */
+#home .curriculo {
+  background-color: #f60;
+}
+
+/* Estilo para o botão de contato */
+#home .contato {
+  background-color: #0c0;
+}
 /* Estilos para a seção sobre */
 .sobremim {
   margin-bottom: 20px;
