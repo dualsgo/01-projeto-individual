@@ -1,12 +1,12 @@
 :root {
-  --primary-color: #000; /* Cor primária */
-  --secondary-color: #fff; /* Cor secundária */
-  --accent-color: #ff0000; /* Cor de destaque */
-  --text-color: #333; /* Cor do texto principal */
-  --text-secondary-color: #666; /* Cor do texto secundário */
+  --primary-color: #004a80; /* Cor primária */
+  --secondary-color: #000; /* Cor secundária */
+  --accent-color: #fff; /* Cor de destaque */
+  --text-color: #00508a; /* Cor do texto principal */
+  --text-secondary-color: #000; /* Cor do texto secundário */
   --button-bg-color: #333; /* Cor de fundo do botão */
   --button-text-color: #fff; /* Cor do texto do botão */
-  --button-hover-bg-color: #555; /* Cor de fundo do botão ao passar o mouse */
+  --button-hover-bg-color: #00c0f4; /* Cor de fundo do botão ao passar o mouse */
 }
 
 /* Reset CSS */
@@ -27,7 +27,7 @@ header nav {
   background-color: var(--primary-color);
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   height: 80px; /* Altura do menu */
   position: fixed; /* Fixa o menu na parte superior */
@@ -143,7 +143,7 @@ button:hover {
   background-color: var(--button-hover-bg-color);
 }
 
-/* Estilos para a seção home */
+/* ----------------------------- Estilos para a seção home ----------------------------- */
 #home {
   display: flex;
   align-items: center;
@@ -185,17 +185,46 @@ button:hover {
   border-radius: 4px;
   cursor: pointer;
 }
+/* Estilo para os links dos botões */
+#home button a {
+  text-decoration: none;
+  color: inherit;
+}
 
-/* Estilo para o botão de currículo */
+/* Estilo para a animação dos botões */
+#home button {
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo para a animação do botão de currículo */
 #home .curriculo {
   background-color: #f60;
 }
 
-/* Estilo para o botão de contato */
+/* Estilo para a animação do botão de contato */
 #home .contato {
   background-color: #0c0;
 }
-/* Estilos para a seção sobre */
+/* Estilo para o hover dos botões */
+#home button:hover {
+  background-color: #555;
+}
+/* ---------------------- Estilos para a seção sobre --------------------------- */
+#sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 25px;
+  line-height: 1.5;
+  height: 100vh; /* Define a altura da seção como 100% da altura da janela */
+}
+.card-sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  line-height: 1.5;
+}
 .sobremim {
   margin-bottom: 20px;
 }
@@ -204,7 +233,40 @@ button:hover {
   max-width: 300px;
 }
 
-/* Estilos para a seção projetos */
+/* ------------------- Estilo para as habilidades e formação -----------------------------*/
+.card-habilidades {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Estilo para a lista de habilidades */
+.card-habilidades .habilidades ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Estilo para os ícones das habilidades */
+.card-habilidades .habilidades li i {
+  margin-right: 5px;
+}
+
+/* Estilo para o título de habilidades e formação */
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.tecnologias {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+/* ----------------------------- Estilos para a seção projetos ---------------------------- */
 .projetos {
   display: flex;
   flex-wrap: wrap;
@@ -280,20 +342,12 @@ footer {
   background-color: var(--primary-color);
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .texto-footer span {
-  color: var(--accent-color);
-}
-
-.logo-footer {
-  text-align: center;
-  height: 100%;
-  border-radius: 50%;
-  background-color: var(--secondary-color);
-  padding: 10px;
+  color: red;
 }
 
 .logo-footer a {
@@ -301,24 +355,4 @@ footer {
   color: var(--text-color);
   font-size: 24px;
   font-weight: bold;
-}
-
-.social-footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.social-footer li {
-  display: inline;
-  margin-right: 10px;
-}
-
-.social-footer a {
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-
-.social-footer a:hover {
-  color: #ccc;
 }

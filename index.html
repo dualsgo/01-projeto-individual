@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio - Maycon Douglas</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <!-- Cabeçalho para o menu de navegação -->
 <header>
     <!-- Barra de navegação -->
     <nav>
+        <!-- Logo centralizado -->
+        <div class="logo">
+            <a href="">MD</a>
+        </div>
         <!-- div para os menus de navegação - lado esquerdo-->
         <div class="menu">
             <ul>
@@ -20,15 +25,11 @@
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </div>
-        <!-- Logo centralizado -->
-        <div class="logo">
-            <a href="">MD</a>
-        </div>
         <!-- Redes sociais - lado direito -->
         <div class="social">
             <ul>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">Github</a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                <li><a href="#"><i class="fab fa-github"></i> Github</a></li>
             </ul>
         </div>
         <!-- <div class="modo"></div> -->
@@ -48,8 +49,14 @@
         </div>
         <!-- botoes que ficarão abaixo do texto -->
         <div>
-            <button class="curriculo">Currículo</button>
-            <button class="contato">WhatsApp</button>
+            <div>
+                <button class="curriculo">
+                    <a href="/caminho/para/seu/arquivo.pdf" download>Currículo</a>
+                </button>
+                <button class="contato">
+                    <a href="https://api.whatsapp.com/send?phone=seu_numero_de_telefone">WhatsApp</a>
+                </button>
+            </div>
         </div>
     </section>
     <!-- Seção sobre - para falar um pouco sobre mim, minhas habilidades e formação -->
@@ -57,29 +64,41 @@
         <!-- Título principal -->
         <h2>Sobre mim</h2>
         <!-- div para o texto e a imagem -->
-        <div>
+        <div class="card-sobre">
             <div class="sobremim">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quaerat provident facilis nesciunt,
                     modi cupiditate maiores amet nobis sapiente et consequatur aut nihil quo! Repudiandae repellat
                     perferendis distinctio sapiente facere?</p>
             </div>
-            <div class="perfil"><img src="" alt=""></div>
+            <div class="perfil"><img src="/assets/images/pao-de-acucar.png" alt=""></div>
         </div>
         <!-- div para as habilidades e formação -->
-        <div>
-            <h2>Habilidades</h2>
+        <h2>Habilidades e Formação</h2>
+        <div class="card-habilidades">
             <!-- Na div de habilidades falar sobre o conteúdo aprendido no curso -->
             <div class="habilidades">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem laborum quae animi
-                    ducimus dicta consequatur pariatur cum inventore dolores, facilis nobis quaerat beatae. Veritatis
-                    est cumque repellendus commodi ad!</p>
+                <!-- Aqui haverá uma lista com os ícones das tecnologias que utilizo para desenvolvimento web -->
+                <div class="tecnologias">
+                    <div>
+                        <ul>
+                            <li><i class="fab fa-html5"></i> HTML</li>
+                            <li><i class="fab fa-css3-alt"></i> CSS</li>
+                            <li><i class="fab fa-js"></i> JavaScript</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><i class="fab fa-html5"></i> HTML</li>
+                            <li><i class="fab fa-css3-alt"></i> CSS</li>
+                            <li><i class="fab fa-js"></i> JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <h2>Formação</h2>
             <!-- Na div de formação falar sobre o curso -->
             <div class="formacao">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quia expedita impedit dolores,
-                    numquam, sunt quibusdam explicabo corrupti ipsum esse natus! Aliquam odio ab illo eius, sint eaque
-                    fuga voluptatem!</p>
+                <!-- Aqui haverá uma descrição do curso -->
+                <p>Descrição do curso</p>
             </div>
         </div>
     </section>
@@ -127,13 +146,6 @@
     <!-- o rodapé se parecerá com a barra de navegação -->
     <div class="texto-footer">
         Feito com <span>❤</span> por Maycon Douglas
-    </div>
-    <div class="logo-footer">MD</div>
-    <div class="social-footer">
-        <ul>
-            <li><a href="#">Linkedin</a></li>
-            <li><a href="#">Github</a></li>
-        </ul>
     </div>
 </footer>
 <!-- Scripts -->
