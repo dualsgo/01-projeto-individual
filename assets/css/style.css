@@ -1,3 +1,14 @@
+:root {
+  --primary-color: #000; /* Cor primária */
+  --secondary-color: #fff; /* Cor secundária */
+  --accent-color: #ff0000; /* Cor de destaque */
+  --text-color: #333; /* Cor do texto principal */
+  --text-secondary-color: #666; /* Cor do texto secundário */
+  --button-bg-color: #333; /* Cor de fundo do botão */
+  --button-text-color: #fff; /* Cor do texto do botão */
+  --button-hover-bg-color: #555; /* Cor de fundo do botão ao passar o mouse */
+}
+
 /* Reset CSS */
 * {
   margin: 0;
@@ -13,12 +24,17 @@
 
 /* Navegação */
 header nav {
-  background-color: #000;
+  background-color: var(--primary-color);
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  height: 80px; /* Altura do menu */
+  position: fixed; /* Fixa o menu na parte superior */
+  top: 0; /* Posiciona o menu no topo */
+  left: 0; /* Posiciona o menu no canto esquerdo */
+  right: 0; /* Posiciona o menu no canto direito */
+  z-index: 999; /* Define uma camada superior para o menu */
 }
 
 /* Lista de menu */
@@ -38,18 +54,18 @@ header nav {
 .menu li a,
 .social li a {
   text-decoration: none;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .menu li a:hover,
 .logo a:hover,
 .social li a:hover {
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .social li a {
   text-decoration: none;
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 16px;
 }
 
@@ -59,17 +75,23 @@ header nav {
 
 /* Logo */
 .logo {
-  text-align: center;
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px; /* Ajuste a altura desejada */
+  width: 60px; /* Ajuste a largura desejada */
+  border-radius: 50%;
+  background-color: var(--secondary-color);
 }
 
 .logo a {
   text-decoration: none;
-  color: #fff;
+  color: var(--text-color);
   font-size: 24px;
   font-weight: bold;
   font-family: "Caveat", cursive;
 }
+
 /* Animações Hover */
 .menu li a,
 .logo a,
@@ -80,5 +102,181 @@ header nav {
 .menu li a:hover,
 .logo a:hover,
 .social li a:hover {
-  color: #2ecc71;
+  color: var(--accent-color);
+}
+
+/* Estilos gerais */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh; /* Define a altura da seção como 100% da altura da janela */
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-color);
+}
+
+p {
+  color: var(--text-secondary-color);
+}
+
+button {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+/* Estilos para a seção home */
+.imagemperfil img {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+.apresentação {
+  margin-left: 20px;
+}
+
+/* Estilos para a seção sobre */
+.sobremim {
+  margin-bottom: 20px;
+}
+
+.perfil img {
+  max-width: 300px;
+}
+
+/* Estilos para a seção projetos */
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.cards:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-imagem img {
+  max-width: 100%;
+}
+
+.card-texto {
+  padding: 20px;
+}
+
+.card-1 {
+  margin-bottom: 10px;
+}
+
+.card-2 {
+  display: flex;
+  align-items: center;
+}
+
+.card-2 img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+/* Estilos para a seção contato */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.texto-footer span {
+  color: var(--accent-color);
+}
+
+.logo-footer {
+  text-align: center;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  padding: 10px;
+}
+
+.logo-footer a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.social-footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-footer li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.social-footer a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.social-footer a:hover {
+  color: #ccc;
 }

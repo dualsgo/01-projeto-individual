@@ -39,7 +39,7 @@
     <!-- Seção home - para a imagem e uma frase de apesentação com botões d e downloado do currículo e redirecionamento para whatsapp -->
     <section id="home" class="section">
         <!-- div para a imagem do lado esquerdo -->
-        <div class="imagemperfil"><img src="" alt=""></div>
+        <div class="imagemperfil"><img src="/assets/images/foto-perfil.jpg" alt=""></div>
         <!-- div para os textos do lado direito -->
         <div class="apresentação">
             <h1>Maycon Douglas</h1>
@@ -136,9 +136,24 @@
         </ul>
     </div>
 </footer>
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js">
+    $(document).ready(function () {
+        // Handler para os links do menu
+        $('a[href^="#"]').click(function (e) {
+            e.preventDefault();
 
-<body>
+            var target = $(this).attr('href');
+            var offset = $(target).offset().top;
 
+            $('html, body').animate({
+                scrollTop: offset
+            }, 500);
+        });
+    });
+
+</script>
+<script src="/assets/scripts/script.js"></script>
 </body>
 
 </html>
