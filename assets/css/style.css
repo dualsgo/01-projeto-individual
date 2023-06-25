@@ -314,45 +314,88 @@ button:hover {
   text-decoration: none;
   color: inherit;
 }
-
 /* ----------------------------- Estilos para a seção projetos ---------------------------- */
-.projetos {
+#projetos {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  height: 100vh;
+  width: 100vw;
 }
 
-.cards {
-  width: 100%;
+#projetos .cards {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-}
-
-.cards:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.card-imagem img {
-  max-width: 100%;
-}
-
-.card-texto {
+  justify-content: space-around;
+  width: 75%;
   padding: 20px;
 }
 
-.card-1 {
-  margin-bottom: 10px;
-}
-
-.card-2 {
+.projetos {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
-.card-2 img {
-  width: 20px;
+.cards {
+  display: flex;
+  border: inset 1px #000;
+}
+
+.card-imagem {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.card-imagem img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-texto {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-texto span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.card-texto p {
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  font-size: 1em;
+}
+
+.card-texto div {
+  display: flex;
+  gap: 10px;
+}
+
+.card-texto button {
+  padding: 8px 16px;
+  background-color: #000;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.card-texto button:hover {
+  background-color: #00c0f4;
+}
+
+.card-texto button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card-texto button i {
   margin-right: 5px;
 }
 

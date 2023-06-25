@@ -1,0 +1,108 @@
+<style>
+.cards {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-imagem {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.card-imagem img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-texto {
+  flex: 1 1 auto;
+}
+
+.card-texto span {
+  font-weight: bold;
+}
+
+.card-texto p {
+  margin-bottom: 10px;
+}
+
+.card-texto div {
+  display: flex;
+  gap: 10px;
+}
+
+.card-texto button {
+  padding: 8px 16px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+</style>
+
+<!-- Seção projetos - para mostrar os projetos que já fiz -->
+<section id="projetos" class="section">
+  <div class="projetos-titulo">
+    <!-- título principal -->
+    <h2>Projetos</h2>
+  </div>
+  <!-- div container para os card dos projetos -->
+  <div class="section-container">
+    <div class="projetos">
+      <!-- cada card será um projeto do curso -->
+      <div class="cards">
+        <!-- no card haverá um botão para visitar o site e o repositório -->
+        <div class="card-imagem">
+          <img src="/individual-1/assets/images/foto-perfil.jpg" alt="">
+        </div>
+        <div class="card-texto">
+          <div>
+            <span>Título</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam provident delectus iste adipisci suscipit excepturi, eaque necessitatibus. Iure nisi incidunt laudantium praesentium enim, recusandae aliquid vitae error quia suscipit.</p>
+          </div>
+          <div>
+            <button>Visite</button>
+            <button>Repositório</button>
+          </div>
+        </div>
+      </div>
+      <!-- cada card será um projeto do curso -->
+      <div class="cards">
+        <!-- no card haverá um botão para visitar o site e o repositório -->
+        <div class="card-imagem">
+          <img src="/individual-1/assets/images/foto-perfil.jpg" alt="">
+        </div>
+        <div class="card-texto">
+          <div>
+            <span>Título</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam provident delectus iste adipisci suscipit excepturi, eaque necessitatibus. Iure nisi incidunt laudantium praesentium enim, recusandae aliquid vitae error quia suscipit.</p>
+          </div>
+          <div>
+            <button>Visite</button>
+            <button>Repositório</button>
+          </div>
+        </div>
+      </div>
+      <!-- cada card será um projeto do curso -->
+      <div class="cards">
+        <!-- no card haverá um botão para visitar o site e o repositório -->
+        <div class="card-imagem">
+          <img src="/individual-1/assets/images/foto-perfil.jpg" alt="">
+        </div>
+        <div class="card-texto">
+          <div>
+            <span>Título</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam provident delectus iste adipisci suscipit excepturi, eaque necessitatibus. Iure nisi incidunt laudantium praesentium enim, recusandae aliquid vitae error quia suscipit.</p>
+          </div>
+          <div>
+            <button>Visite</button>
+            <button>Repositório</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

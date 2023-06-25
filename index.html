@@ -56,60 +56,90 @@
             <!-- botoes que ficarão abaixo do texto -->
             <div class="botoes">
                 <button class="curriculo">
-                    <a href="/caminho/para/seu/arquivo.pdf" download>Currículo</a>
+                    <i class="fa fa-file-pdf" aria-hidden="true"></i>
+                    <a href="/caminho/para/seu/arquivo.pdf" download> Currículo</a>
                 </button>
                 <button class="contato">
-                    <a href="https://api.whatsapp.com/send?phone=seu_numero_de_telefone">WhatsApp</a>
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    <a href="https://api.whatsapp.com/send?phone=seu_numero_de_telefone"> WhatsApp</a>
                 </button>
             </div>
         </div>
     </section>
     <!-- Seção sobre - para falar um pouco sobre mim, minhas habilidades e formação -->
     <section id="sobre" class="section">
-<div class="sobre-titulo">
+        <div class="sobre-titulo">
             <!-- título principal -->
             <h2>Sobre mim: Formação e habilidades</h2>
-</div>
-<div class="sobre-card">
-    <!-- Na div de formação falar sobre o curso -->
-    <div class="formacao">
-        <!-- Aqui haverá uma descrição do curso -->
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa sequi sit eligendi numquam odio
-            praesentium veritatis ducimus vero. Sit fuga eos eum atque laboriosam laudantium optio deleniti
-            minima sunt ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus laboriosam nulla accusantium maiores non quis culpa ipsum fugit pariatur? Blanditiis accusamus velit odio accusantium at provident suscipit alias eligendi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus dolor a quod, exercitationem quae nostrum eius. Deleniti consectetur at voluptatibus voluptas, ipsum modi sint, ipsam dolores id, molestiae similique consequuntur?</p>
-    </div>
-    <div class="tecnologias">
-        <ul>
-            <li><i class="fab fa-html5"></i> HTML</li>
-            <li><i class="fab fa-css3-alt"></i> CSS</li>
-            <li><i class="fab fa-js"></i> JavaScript</li>
-            <li><i class="fab fa-react"></i> React</li>
-            <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
-            <li><i class="fab fa-git"></i> Git</li>
-        </ul>
-    </div>
-</div>
+        </div>
+        <div class="sobre-card">
+            <!-- Na div de formação falar sobre o curso -->
+            <div class="formacao">
+                <!-- Aqui haverá uma descrição do curso -->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa sequi sit eligendi numquam odio
+                    praesentium veritatis ducimus vero. Sit fuga eos eum atque laboriosam laudantium optio deleniti
+                    minima sunt ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus
+                    laboriosam nulla accusantium maiores non quis culpa ipsum fugit pariatur? Blanditiis accusamus velit
+                    odio accusantium at provident suscipit alias eligendi. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Possimus dolor a quod, exercitationem quae nostrum eius. Deleniti consectetur at
+                    voluptatibus voluptas, ipsum modi sint, ipsam dolores id, molestiae similique consequuntur?</p>
+            </div>
+            <div class="tecnologias">
+                <ul>
+                    <li><i class="fab fa-html5"></i> HTML</li>
+                    <li><i class="fab fa-css3-alt"></i> CSS</li>
+                    <li><i class="fab fa-js"></i> JavaScript</li>
+                    <li><i class="fab fa-react"></i> React</li>
+                    <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+                    <li><i class="fab fa-git"></i> Git</li>
+                </ul>
+            </div>
+        </div>
     </section>
     <!-- Seção projetos - para mostrar os projetos que já fiz -->
     <section id="projetos" class="section">
-        <!-- título principal -->
-        <h2>Projetos</h2>
+        <div class="projetos-titulo">
+            <!-- título principal -->
+            <h2>Projetos</h2>
+        </div>
         <!-- div container para os card dos projetos -->
-        <div class="projetos">
-            <!-- cada card será um projeto do curso -->
-            <div class="cards">
-                <!-- no card haverá uma imagem do site -->
-                <div class="card-imagem">
-                    <img src="" alt="">
-                </div>
-                <!-- no card haverá um texto com o título e a descrição do projeto -->
-                <div class="card-texto">
-                    <div class="card-1">
-                        <h3>Título</h3>
-                        <p>Descrição</p>
-                    </div>
+        <div class="section-container">
+            <div class="projetos">
+                <!-- cada card será um projeto do curso -->
+                <div class="cards">
                     <!-- no card haverá um botão para visitar o site e o repositório -->
-                    <div class="card-2"><img src="" alt=""><button>Visite</button></div>
+                    <div class="card-imagem">
+                        <img src="/individual-1/assets/images/foto-perfil.jpg" alt="">
+                    </div>
+                    <div class="card-texto">
+                        <span>Título</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam provident delectus
+                            iste adipisci suscipit excepturi, eaque necessitatibus. Iure nisi incidunt laudantium
+                            praesentium enim, recusandae aliquid vitae error quia suscipit.</p>
+                        <div>
+                            <button><i class="fa fa-link" aria-hidden="true"></i>
+                                <a href="#"> Visite</a></button>
+                            <button><i class="fab fa-github"></i><a href="/#"> Repositório</a></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- cada card será um projeto do curso -->
+                <div class="cards">
+                    <!-- no card haverá um botão para visitar o site e o repositório -->
+                    <div class="card-imagem">
+                        <img src="/individual-1/assets/images/foto-perfil.jpg" alt="">
+                    </div>
+                    <div class="card-texto">
+                        <span>Título</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam provident delectus
+                            iste adipisci suscipit excepturi, eaque necessitatibus. Iure nisi incidunt laudantium
+                            praesentium enim, recusandae aliquid vitae error quia suscipit.</p>
+                        <div>
+                            <button><i class="fa fa-link" aria-hidden="true"></i>
+                                <a href="#"> Visite</a></button>
+                            <button><i class="fab fa-github"></i><a href="/#"> Repositório</a></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
